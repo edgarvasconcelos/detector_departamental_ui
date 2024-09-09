@@ -3,9 +3,16 @@ FROM node:18 AS build
 
 WORKDIR /app
 
-COPY package.json package-lock.json /app/
+# Copy package.json and package-lock.json first to leverage Docker cache
+COPY package*.json /app
+
+# Install dependencies
 RUN npm install
-COPY . /app/
+
+# Copy the rest of the application code
+COPY . /app
+
+# Build the frontend application
 RUN npm run build
 
 # Stage 2: Serve
