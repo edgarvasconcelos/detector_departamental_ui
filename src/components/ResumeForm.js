@@ -12,9 +12,9 @@ const ResumeForm = ({ onSubmit }) => {
     <div className="min-h-screen bg-black-100 flex justify-center items-center">
       <div className="container mx-auto bg-indigo-700 rounded-2xl p-8 shadow-lg w-1/2">
         <form onSubmit={handleSubmit}>
-          <h1 className="text-center font-bold text-white text-3xl mb-6">Descubra qual departamento a partir do resumo</h1>
+          <h1 className="text-center font-bold text-white text-3xl mb-6">Detector de Unidade Departamental a partir de resumo do currículo Lattes dos docentes da Unimontes</h1>
           <p className="mx-auto font-normal text-base my-4 max-w-lg text-gray-200">
-            Entre com o resumo e descubra o departamento correspondente.
+            Coloque o resumo do currículo Lattes e descubra o departamento correspondente.
           </p>
           <textarea
             value={resume}
