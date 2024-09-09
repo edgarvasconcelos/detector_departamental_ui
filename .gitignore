@@ -9,7 +9,8 @@
 /coverage
 
 # production
-/build
+/build/
+/dist/
 
 # misc
 .DS_Store
@@ -18,6 +19,16 @@
 .env.test.local
 .env.production.local
 
+# Ignorar arquivos de ambiente
+.env
+.env.*
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+Dockerfile.dev
+
+# IDE/editor specific files
+.vscode/
+.idea/
