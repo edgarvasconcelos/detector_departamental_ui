@@ -41,7 +41,6 @@ function App() {
       setCache(prevCache => ({ ...prevCache, [resume]: predictions }));
       
       setResults(predictions);
-      console.log('Response Data:', data);
       setIsPopupOpen(true);
     } catch (error) {
       console.error('Error submitting resume:', error.message);
